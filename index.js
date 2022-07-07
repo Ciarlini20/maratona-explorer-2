@@ -1,9 +1,12 @@
 function changeTheme() {
-  const body = document.querySelector('#body')
-  const button = document.querySelector('#Button')
-  if (body.classList.contains('dark') == true) {
-    body.classList.remove('dark')
+  const bodyTheme = document.querySelector('#changeBody')
+  const buttonTheme = document.querySelector('#changeButton')
+
+  if (bodyTheme.classList.contains('dark') == true) {
+    bodyTheme.classList.remove('dark')
+    buttonTheme.classList.remove('dark')
   } else {
-    body.classList.add('dark')
+    bodyTheme.classList.add('dark')
+    buttonTheme.classList.add('dark')
   }
 }
